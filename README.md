@@ -29,25 +29,25 @@ python main.py --algorithm paxos
 Output:
 
 Node 1 → Node 2: PROPOSE (proposal_id=1)
-Node 1 → Node 3: PROPOSE (proposal_id=1)
-Node 2 received PROMISE for proposal 1
-Raft Leader Election
-bash
-python main.py --algorithm raft
-Output:
 
+Node 1 → Node 3: PROPOSE (proposal_id=1)
+
+Node 2 received PROMISE for proposal 1
+
+
+Raft Leader Election
+
+bash
+
+python main.py --algorithm raft
+
+Output:
 Node 1 started election (term=1)
+
 Node 2 → Node 1: VOTE_GRANTED
+
 Node 1 became LEADER for term 1
-📂 Project Structure
-.
-├── consensus/           # Consensus algorithms
-│   ├── paxos.py         # Paxos implementation
-│   └── raft.py          # Raft implementation
-├── tests/               # Unit tests
-├── node.py              # Node network behavior
-├── message.py           # Message protocol
-└── main.py              # Simulation entry point
+
 🧪 Testing
 bash
 # Run all tests
