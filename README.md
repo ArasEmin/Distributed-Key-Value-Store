@@ -17,8 +17,8 @@ A Python implementation of a fault-tolerant distributed system simulating Paxos 
 ## 🛠️ Setup
 
 # Clone repository
-git clone https://github.com/yourusername/distributed-kv-store.git
-cd distributed-kv-store
+git clone https://github.com/ArasEmin/Distributed-Key-Value-Store.git
+cd Distributed-Key-Value-Store
 
 # Install dependencies (none required for basic simulation)
 python -m pip install -r requirements.txt  # Optional for visualization
